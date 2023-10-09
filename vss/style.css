@@ -24,3 +24,61 @@ font-size: 24px;
 .header-footer{
     margin-top: 26px;
 }
+.hero-img{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.hero-text{
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+.hero a{
+    color: #726E8D;
+    font-family:sans-serif;
+    font-size: 16px;
+    text-decoration: none;  
+}
+.section {
+    display: flex;
+    margin-top: 60px;
+}
+.section-tex{
+    background: #2A254B;
+    flex: 1;
+}
+.section-img{
+    flex: 1;
+}
+.section h1{
+    color:  #FFF;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%; /* 44.8px */
+    margin-left: 60px;
+    margin-top: 60px;
+}
+.section button{
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 60px;
+    background: rgba(249, 249, 249, 0.15);
+    border: none;
+    margin-top: 41px;
+    color: #FFF;
+}
+.section p{
+    color: var(--White, #FFF);
+    /* Body / Large */
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    margin-left: 60px;
+    margin-top: 196px;
+}
