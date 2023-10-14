@@ -4,9 +4,10 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    
 }
 .container{
-    width: 1280px;
+   max-width: 1280px;
     margin: 0 auto;
 }
 .header{
@@ -418,4 +419,54 @@ margin-bottom: 30px;
 .footer__iconse{
     font-size: 24px;
     background: #FFF;
+}
+@media screen and (max-width: 1140px) {
+    .hero-img{
+        display: none;
+    }
+    .section__hero-price{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .section__center :nth-child(1){
+        display: none;  
+    }
+}
+@media screen and (max-width: 980px) {
+   .section-img{
+    display: none;
+   } 
+   .section__header-icon-text{
+    display: flex;
+    flex-direction: column;
+   }
+   .section__one-header-icon-one{
+    margin-left: 70px;
+   }
+   .section__one-header{
+    margin-left: 70px;
+   }
+   .footer__header{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   .section__footer{
+    display: flex;
+    flex-direction: column;
+   }
+   .footer__icon-icon{
+    display: none;
+   }
+   .footer__header-menu{
+    margin-left: 150px;
+   }
+   #section__email{
+    display: none;
+   }
+   .wrap{
+    margin-left: 150px;
+   }
+}
+@media screen and (max-width: 789px){
+ 
 }
