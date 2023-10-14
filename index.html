@@ -21,12 +21,39 @@
                     <div class="header-footer">
                         <ion-icon name="cart-outline"></ion-icon>
                         <ion-icon name="person-outline"></ion-icon>
+                        <div class="header__burger">
+                        <div class="hamburger hamburger--boring">
+                            <div class="hamburger-box">
+                              <div class="hamburger-inner"></div>
+                            </div>
+                          </div>
+                          
+                          <div class="burger-wrap">
+                            <div class="burger__content">
+                                <button class="burger__close">x</button>
+        
+                                <h5 class="burger__title">Menu</h5>
+                                <nav class="burger__list">
+                                    <a href="#" class="burger__link">Plant pots</a>
+                                    <a href="#" class="burger__link">Ceramics</a>
+                                    <a href="#" class="burger__link">Tables</a>
+                                    <a href="#" class="burger__link">Chairs</a>
+                                    <a href="#" class="burger__link">Crockery</a>
+                                    <a href="#"class="burger__link">Tableware</a>
+                                    <a href="#"class="burger__link">Cutlery</a>
+                                </nav>
+                                <div class="burger__background">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
 
     </div>
-    <div id="hero">
+    <!-- <div id="hero">
         <div class="container">
             <div class="hero">
               <div class="hero-img">
@@ -158,7 +185,7 @@
             </div>
         </div>
     </div>
-</div> 
+    </div> 
     <div id="section__email">
         <div class="container">
             <div class="section__email">
@@ -248,9 +275,28 @@
                 
             </div>
         </div>
+    </div> -->
     </div>
   
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    const burgerOpen = document.querySelector('.hamburger')
+    const burgerClose = document.querySelector('.burger__close')
+
+    const burgerWrap = document.querySelector('.burger-wrap')
+
+    burgerOpen.addEventListener('click', function(){
+        burgerOpen.classList.add('is-active')
+        burgerWrap.classList.add('active')
+    } )
+
+    burgerClose.addEventListener('click', function(){
+        burgerOpen.classList.remove('is-active')
+        burgerWrap.classList.remove('active')
+    } )
+</script>
+
 </body>
 </html>
